@@ -1,0 +1,171 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+  padding-top: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+}
+
+.main-header {
+  text-align: center
+}
+
+.main-nav li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+.banner {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .name {
+    float: left;
+    width: 50%;
+    padding-right: 25%;
+  }
+  .main-nav {
+    float: left;
+    width: 50%;
+    font-size: 1em;
+    margin-top: 13.4px;
+  }
+  .main-nav li {
+    display: inline-block;
+    padding-right: 5%;
+  }
+  
+  .col {
+    float: left;
+  }
+  .primary {
+    width: calc(50% - 50px);
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .secondary {
+    width: calc(50% - 50px);
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .tertiary {
+    float: none;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1162px) {
+
+  .primary {
+    width: calc(40% - 50px);
+  }
+  .secondary {
+    width: calc(30% - 50px);
+  }
+  .tertiary {
+    float: left;
+    width: calc(30% - 50px);
+  }
+  .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
